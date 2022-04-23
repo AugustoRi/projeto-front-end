@@ -21,16 +21,16 @@ const Container = styled.section`
 const StatusCursos = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 120px;
+  justify-content: space-between;
+  
+  width: 90%;
 `;
 
-const Cursos = styled.div`
+const CursosWrap = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 
-export { Main, Container, StatusCursos, Cursos };
+export { Main, Container, StatusCursos, CursosWrap };

@@ -1,5 +1,7 @@
 //import { cursos } from "../../services/db/dados";
-import { Main, Container, StatusCursos, Cursos } from "./style";
+import { Cursos } from "../Cursos";
+import { Main, Container, StatusCursos, CursosWrap } from "./style";
+//
 
 export function Listagem() {
   return (
@@ -9,7 +11,9 @@ export function Listagem() {
           <h1>Concluídos</h1>
           <h1>Próximos</h1>
         </StatusCursos>
-        <Cursos></Cursos>
+        <CursosWrap>
+          <Cursos />
+        </CursosWrap>
       </Container>
     </Main>
     //console.log(cursos)
