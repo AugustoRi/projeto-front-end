@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
+  padding: 1em;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   
   cursor: pointer;
   
+  &:hover{
+    background-color: #ccc;
+  }
+
   & > a{
     display: flex;
     gap: 15px;
@@ -17,6 +24,10 @@ export const Container = styled.div`
 
   &:first-child{
     margin-top: 35px;
+  }
+
+  &:last-child{
+    margin-bottom: 35px;
   }
 
   & + &{

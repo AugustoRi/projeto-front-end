@@ -7,12 +7,17 @@ export const Container = styled.section`
   justify-content: center;
 
   margin-top: 30px;
+  padding-left: 20%;
+
+  @media (max-width: 768px) {
+    padding-left: 10%;
+  }
 `;
 
 export const CursoContent = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
   width: 100%;
 `;
@@ -24,26 +29,24 @@ export const Image = styled.div`
   background-repeat: no-repeat;
 
   width: 150px;
-  height: 140px;
+  height: 120px;
 `;
 
 export const Text = styled.div`
   & > h1 {
-    font: 400 3em 'Poppins', sans-serif;
-    color: #ccc;
+    font: 400 2em 'Poppins', sans-serif;
+    color: #A9A9A9;
   }
 
   & > span {
-    font: 200 1.5 em 'Poppins', sans-serif;
-    color: #ccc;
+    font: 200 1.2em 'Poppins', sans-serif;
+    color: #A9A9A9;
   }
 `;
 
 export const TempoCurso = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
 
   margin-top: 30px;
   width: 100%;
@@ -52,8 +55,10 @@ export const TempoCurso = styled.div`
 export const Tempo = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
+
+  width: 100%;
 
   & + &{
     margin-top: 30px;

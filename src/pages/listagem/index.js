@@ -10,7 +10,7 @@ export function Listagem() {
     <Main>
       <Container>
         <StatusCursos>
-          <h1>Concluídos</h1>
+          <h1>Concluídos</h1> 
           <h1>Próximos</h1>
         </StatusCursos>
         <CursosWrap>
@@ -19,7 +19,5 @@ export function Listagem() {
       </Container>
     </Main>
     </>
-      
-    //console.log(cursos)
   );
 }

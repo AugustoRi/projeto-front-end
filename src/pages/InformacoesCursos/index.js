@@ -18,7 +18,7 @@ export function InformacoesCursos() {
 
   const imagemCursoInformacoes = cursos.find(
     curso => curso.img_icon[parametrosUrl.id - 1]
-  );
+  ); 
 
   return (    
     <>

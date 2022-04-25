@@ -1,4 +1,4 @@
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { HeaderName } from "./HeaderName";
 import { HeaderWrap, Container, Menu, IconMenu, Logo, IconLogo } from "./style";
@@ -13,7 +13,7 @@ export function Header({titulo}) {
         </Menu>
         
         <Logo>
-          <a href='/'><IconLogo/></a>
+          <Link to='/'><IconLogo/></Link>
           <HeaderName title={titulo} />
         </Logo>
       </Container>

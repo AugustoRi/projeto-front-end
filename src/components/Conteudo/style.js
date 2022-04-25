@@ -5,8 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
 
   margin-top: 30px;
+  width: 100%;
 
   & > span:not(:first-child){
     margin-top: 10px;
+  }
+
+  & > span:last-child{
+    margin-bottom: 30px;
   }
 `

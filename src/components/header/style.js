@@ -3,19 +3,18 @@ import ImgMenu from '../../assets/imgs/icon-menu.png';
 import ImgLogo from '../../assets/imgs/logo.png';
 
 const HeaderWrap = styled.header`
-  background-color: blue;
+  background-color: #2D4277;
 `;
 
 const Container = styled.section`
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   gap: 15px;
 
   max-width: 1280px;
-  margin: 0 auto;
 
-  padding: 0.5em;
+  padding: 1% 2%;
 `;
 
 const Menu = styled.div`
