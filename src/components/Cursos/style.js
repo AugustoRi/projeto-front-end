@@ -4,9 +4,16 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-
+  
   cursor: pointer;
+  
+  & > a{
+    display: flex;
+    gap: 15px;
+    
+    color: #000;
+    text-decoration: none;
+  }
 
   &:first-child{
     margin-top: 35px;

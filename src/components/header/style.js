@@ -43,17 +43,6 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
-
-  & > h1{
-    font: 500 3em 'Poppins', sans-serif;
-    color: #F8F8F8;
-  }
-
-  @media(max-width: 720px) {
-    & > h1{
-      font-size: 2em !important;
-    }
-  }
 `;
 
 const IconLogo = styled.div`

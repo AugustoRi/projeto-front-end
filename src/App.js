@@ -1,10 +1,15 @@
-import { Header } from "./components/header/index";
-import { Listagem } from "./components/listagem";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Listagem } from "./pages/listagem";
+import { InformacoesCursos } from "./pages/InformacoesCursos";
 function App() {
   return (
     <>
-      <Header />
-      <Listagem />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Listagem />}/>
+        <Route path="/:curso/:id" element={<InformacoesCursos />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }

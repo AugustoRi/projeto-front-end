@@ -5,7 +5,7 @@
      "professor":"Yuri",
      "dt_realizacao":"06/06/2019",
      "carga_horaria":3,
-     "img_icon":"./src/assets/imgs/avatar-maven.png",
+     "img_icon":"avatar-maven.png",
      "conteudo":[
         "Introdução ao Maven",
         "Modelo de Arquitetura",

@@ -1,10 +1,12 @@
 //import { cursos } from "../../services/db/dados";
-import { Cursos } from "../Cursos";
+import { Header } from "../../components/header";
+import { Cursos } from "../../components/Cursos";
 import { Main, Container, StatusCursos, CursosWrap } from "./style";
-//
 
 export function Listagem() {
   return (
+    <>
+    <Header titulo="Cursos" />
     <Main>
       <Container>
         <StatusCursos>
@@ -16,6 +18,8 @@ export function Listagem() {
         </CursosWrap>
       </Container>
     </Main>
+    </>
+      
     //console.log(cursos)
   );
 }
