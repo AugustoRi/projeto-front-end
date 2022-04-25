@@ -4,7 +4,6 @@ import { HeaderName } from "./HeaderName";
 import { HeaderWrap, Container, Menu, IconMenu, Logo, IconLogo } from "./style";
 
 export function Header({titulo}) {
-
   return(
     <HeaderWrap>
       <Container>

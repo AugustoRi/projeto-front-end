@@ -17,11 +17,6 @@ const GlobalStyle =  createGlobalStyle`
   body, input, button, textarea{
     font: 400 1em 'Poppins', sans-serif;
   }
-  /* body {
-    margin: 0;
-    padding: 0;
-    color: ${props => (props.darkMode ? 'white' : 'black')};
-  } */
 `
 
 export default GlobalStyle;

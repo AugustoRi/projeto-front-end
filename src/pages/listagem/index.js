@@ -1,4 +1,3 @@
-//import { cursos } from "../../services/db/dados";
 import { Header } from "../../components/header";
 import { Cursos } from "../../components/Cursos";
 import { Main, Container, StatusCursos, CursosWrap } from "./style";

@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+export const HeaderListagem = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2D4277;
+`;
+
+export const Sair = styled.div`
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin-right: 2%;
+  cursor: pointer;
+`;
+
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
@@ -30,6 +46,10 @@ export const Image = styled.div`
 
   width: 150px;
   height: 120px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Text = styled.div`

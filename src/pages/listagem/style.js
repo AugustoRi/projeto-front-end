@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Main = styled.main`
+export const Main = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@ const Main = styled.main`
   padding-top: 10px;
 `;
 
-const Container = styled.section`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@ const Container = styled.section`
   max-width: 980px;
 `;
 
-const StatusCursos = styled.div`
+export const StatusCursos = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,11 +43,9 @@ const StatusCursos = styled.div`
   }
 `;
 
-const CursosWrap = styled.section`
+export const CursosWrap = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 `;
-
-export { Main, Container, StatusCursos, CursosWrap };

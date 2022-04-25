@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import imagemTeste from "../../assets/imgs/avatar-maven.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -43,9 +44,13 @@ export const Image = styled.div`
   width: 70px;
   height: 70px;
 
-  & > img{
+  & > div{
+    background-image: url(${imagemTeste});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     width: 60px;
-    height: 60px;
+    height: 40px;
   }
 
   background-color: #ccc;
