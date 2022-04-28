@@ -38,20 +38,6 @@ export const CursoContent = styled.div`
   width: 100%;
 `;
 
-export const Image = styled.div`
-  background-image: url(${props => props.image});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  width: 150px;
-  height: 120px;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
 export const Text = styled.div`
   & > h1 {
     font: 400 2em 'Poppins', sans-serif;

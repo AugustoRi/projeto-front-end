@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imagemTeste from "../../assets/imgs/avatar-maven.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -36,25 +35,16 @@ export const Container = styled.div`
   }
 `;
 
-export const Image = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  width: 70px;
-  height: 70px;
+// export const Image = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+//   width: 70px;
+//   height: 70px;
 
-  & > div{
-    background-image: url(${imagemTeste});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 60px;
-    height: 40px;
-  }
-
-  background-color: #ccc;
-`;
+//   background-color: #ccc;
+// `;
 
 export const Informacoes = styled.div`
   display: flex;
