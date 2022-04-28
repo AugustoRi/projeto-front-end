@@ -2,22 +2,17 @@ import { cursos } from "../../services/db/dados.js";
 
 import { Header } from "../../components/header";
 import { Conteudo } from "../../components/Conteudo/index.js";
+import { Imagem } from "../../components/Imagem/index.js";
 
-import {  HeaderListagem, Sair, Container, CursoContent, Image, Text, TempoCurso, Tempo, TextTempo, Icone } from "./style";
+import {  HeaderListagem, Sair, Container, CursoContent, Text, TempoCurso, Tempo, TextTempo, Icone } from "./style";
 
 import { useParams, Link } from "react-router-dom";
-
-import imagemTeste from "../../assets/imgs/avatar-maven.png"
 
 export function InformacoesCursos() {
 
   const parametrosUrl = useParams();
 
-  const pegarInformacoes = Object.values(cursos)[parametrosUrl.id - 1]
-
-  // const imagemCursoInformacoes = cursos.find(
-  //   curso => curso.img_icon[parametrosUrl.id - 1]
-  // ); 
+  const pegarInformacoes = Object.values(cursos)[parametrosUrl.id - 1];
 
   return (    
     <>
@@ -31,7 +26,14 @@ export function InformacoesCursos() {
     </HeaderListagem>
     <Container>
       <CursoContent>
-        <Image image={imagemTeste}/>
+        <Imagem 
+          imgHeight={ pegarInformacoes.id < 3 ? "100px" : "100px" }
+          imgWidth={ pegarInformacoes.id < 3 ? "150px" : "100px" }
+          imgSrc={pegarInformacoes.img_icon}
+          imgAlt={`Logo do curso de ${pegarInformacoes.nome}`}
+          imgDisplay="flex"
+          imgDisplayMedia="none"
+          />
         <Text>
           <h1>{pegarInformacoes.nome}</h1>
           <span>Professor: {pegarInformacoes.professor}</span>
